@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+    server:
+        build: './server'
+        expose:
+            - ${APP_SERVER_PORT}
+        environment: 
+            API_HOST: ${API_HOST}
+            APP_SERVER_PORT: ${APP_SERVER_PORT}
+        ports:
+            - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
+        volumes:
+            - ./server/src:/srv/app/qr/src
+        command: python manage.py runserver
+    
+    client:
+        build: './client'
+        expose:
+            - ${VUE_APP_PORT}
+        environment: 
+            AVUE_APP_PORT: ${VUE_APP_PORT}
+        ports:
+            - ${VUE_APP_PORT}:${VUE_APP_PORT}
+        volumes:
+            - ./client/src:/srv/app/qr/src
+            - ./client/public:/srv/app/qr/public
+        links:
+            - server
+        environment:
+            - CHOKIDAR_USEPOLLING=true
+        command: npm run serve
