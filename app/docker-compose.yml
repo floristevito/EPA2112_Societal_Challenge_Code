@@ -12,7 +12,7 @@ services:
             - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
         volumes:
             - ./server/src:/srv/app/qr/src
-        command: python manage.py runserver
+        command: python manage.py runserver 0.0.0.0:8000
     
     client:
         build: './client'
