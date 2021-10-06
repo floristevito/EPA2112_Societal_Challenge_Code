@@ -1,6 +1,5 @@
 <template>
   <div id="concept">
-      <h1>test concept...</h1>
       <Conceptinfo></Conceptinfo>
   </div>
 </template>
@@ -8,7 +7,7 @@
 <script>
 import Conceptinfo from '../components/Conceptinfo.vue'
 export default {
-  name: 'Conceptinfo',
+  name: 'Concept',
   components: {
   Conceptinfo
   }

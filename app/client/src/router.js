@@ -14,6 +14,11 @@ export default new Router({
           path: '/concept',
           name: 'concept',
           component: () => import('./views/Concept.vue')
+        },
+        {
+          path: '/contact',
+          name: 'contact',
+          component: () => import('./views/Contact.vue')
         }
     ]
 })
