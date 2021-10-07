@@ -35,7 +35,7 @@ name: 'Conceptinfo'
 
 <style scoped>
 #info {
-  background-color: red;
+  background-color: grey;
   border-radius: 0px;
   /* background-repeat: auto;
   background-image: url("../assets/hands.png"); */

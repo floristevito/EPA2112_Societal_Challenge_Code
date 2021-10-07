@@ -3,7 +3,6 @@
     <Menu></Menu>
     <!-- <div class="row no-gutters mb-5"></div> -->
     <div class="row no-gutters mb-3"></div>
-    <h1>test</h1>
     <Router></Router>
   </div>
 </template>
