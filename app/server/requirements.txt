@@ -8,6 +8,7 @@ certifi==2021.5.30
 cffi==1.14.5
 defusedxml==0.7.1
 Django==3.2.7
+djangorestframework==3.12.4
 idna==2.10
 jedi==0.17.0
 json5==0.9.5
