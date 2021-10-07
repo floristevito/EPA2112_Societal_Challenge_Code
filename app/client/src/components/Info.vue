@@ -6,7 +6,6 @@
   <div class="col-1 col-sm-2"></div>
   <div class="col-10 col-sm-8">
       <p class="lead">We measure what is needed in The Heague</p>
-   <!-- width="400rem" height="400rem"> -->
   </div>
   <div class="col-1 col-sm-2"></div>
   </div>
