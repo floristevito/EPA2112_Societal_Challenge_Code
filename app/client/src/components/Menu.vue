@@ -17,6 +17,7 @@
                     <b-collapse id="navbar-toggle-collapse" is-nav>
                         <b-nav-item to="/">Home</b-nav-item>
                         <b-nav-item to="/concept">Our concept</b-nav-item>
+                        <b-nav-item to="/form">Your opinion</b-nav-item>
                         <b-nav-item to="/contact">Contact</b-nav-item>
                     </b-collapse>
                 </b-navbar-nav>

@@ -19,12 +19,6 @@
 export default {
 name: 'Infostatic',
 components: {},
-// data() {
-// return {
-//     title: "test",
-//     content: "",
-//     }
-// },
 props: {
   title: {
     type: String

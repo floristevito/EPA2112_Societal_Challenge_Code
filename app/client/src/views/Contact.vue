@@ -1,8 +1,7 @@
 <template>
   <div id="contact_info">
-    <Infostatic title="Contact" content="Heeft u vragen over ons concept, of iets anders? 
-    U kunt ons altijd bereiken via email. 
-    Bereik ons via: b.hermans@student.tudelft.nl"></Infostatic>
+    <Infostatic title="Contact" content="Do you have any questions regarding our project, reach out to us!
+     b.hermans@student.tudelft.nl"></Infostatic>
   </div>
 </template>
 
