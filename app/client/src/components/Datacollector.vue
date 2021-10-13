@@ -24,7 +24,6 @@
         ></b-form-input>
       </b-form-group>
 
-
       <b-button type="submit" variant="primary">Submit</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
@@ -32,6 +31,7 @@
 </template>
 
 <script>
+import axios from 'axios'
   export default {
     data() {
       return {
@@ -46,7 +46,14 @@
     methods: {
       onSubmit(event) {
         event.preventDefault()
-        alert(JSON.stringify(this.form))
+        // alert(JSON.stringify(this.form))
+        axios({method: 'post',
+               url: '/feedback',
+               headers: {
+                 'Content-Type': 'application/json',
+                 },
+               data: this.form 
+              })
       },
       onReset(event) {
         event.preventDefault()
