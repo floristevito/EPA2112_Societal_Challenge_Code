@@ -48,12 +48,14 @@ import axios from 'axios'
         event.preventDefault()
         // alert(JSON.stringify(this.form))
         axios({method: 'post',
-               url: '/feedback',
+               url: 'localhost:8000/feedback',
                headers: {
                  'Content-Type': 'application/json',
                  },
                data: this.form 
-              })
+              }).then(
+                  (response) => console.log(response)
+              )
       },
       onReset(event) {
         event.preventDefault()
