@@ -56,7 +56,7 @@ import axios from 'axios'
               })
               .then(
                   (response) => {console.log(response)}
-              )
+              );
       },
       onReset(event) {
         event.preventDefault()
