@@ -19,6 +19,11 @@ export default new Router({
           path: '/contact',
           name: 'contact',
           component: () => import('./views/Contact.vue')
+        },
+        {
+          path: '/form',
+          name: 'form',
+          component: () => import('./views/Form.vue')
         }
     ]
 })
