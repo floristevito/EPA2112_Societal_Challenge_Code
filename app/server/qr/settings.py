@@ -11,6 +11,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+import ssl
+
+# load environment variables
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,8 +83,14 @@ WSGI_APPLICATION = 'qr.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+            'ENGINE': 'djongo',
+            'NAME': 'feedback',
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'mongodb+srv://{}:{}@feedback.6w6tq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'.format(os.getenv('MONGO_USERNAME'), os.getenv('MONGO_PASSWORD'))
+            }, 
+            'SSL': True,
+            'SSL_CERT_REQS': ssl.CERT_NONE,
     }
 }
 
