@@ -48,7 +48,7 @@ import axios from 'axios'
         event.preventDefault()
         // alert(JSON.stringify(this.form))
         axios({method: 'post',
-               url: 'http://localhost:80/api/feedback',
+               url: 'http://localhost:80/feedback/',
                headers: {
                  'Content-Type': 'application/json',
                  },
