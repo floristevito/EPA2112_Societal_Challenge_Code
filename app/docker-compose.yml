@@ -13,6 +13,8 @@ services:
         volumes:
             - ./server/src:/srv/app/qr/src
         command: python manage.py runserver 0.0.0.0:8000
+        networks:
+            - nginx_network
     
     client:
         build: './client'
@@ -30,3 +32,17 @@ services:
         environment:
             - CHOKIDAR_USEPOLLING=true
         command: npm run serve
+        networks:
+            - nginx_network
+
+    nginx:
+        image: nginx:1.13
+        build: './nginx'
+        ports:
+            - 80:80
+        networks:
+            - nginx_network
+
+networks:  
+  nginx_network:
+    driver: bridge
