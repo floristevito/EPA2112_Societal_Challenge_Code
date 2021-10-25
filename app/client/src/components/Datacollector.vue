@@ -1,28 +1,103 @@
 <template>
   <div>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-      <b-form-group
-        id="input-group-1"
-        label="What do you think about this place?"
-        label-for="input-1"
-        description="Example: The trees here look nice."
-      >
+      <b-form-group 
+        id="input-group-2" 
+        label="Wat is uw leeftijd?" 
+        label-for="input-2"
+        description="Omdat we van zowel jongeren als ouderen willen weten wat ze van deze plek vinden, willen we graag uw leeftijd weten. "
+        >
         <b-form-input
-          id="input-1"
-          v-model="form.feedback"
+          id="input-2"
+          v-model="form.age"
           placeholder=""
           required
         ></b-form-input>
       </b-form-group>
 
-      <b-form-group id="input-group-2" label="Your Age:" label-for="input-2">
-        <b-form-input
-          id="input-2"
-          v-model="form.age"
-          placeholder="Enter your age"
-          required
-        ></b-form-input>
+      <b-form-group id=input-group02 label="Hoe vaak komt u hier?" label-for="input-2">
+        <b-form-radio-group
+        id="radio-group-1"
+        v-model="form.frequency"
+        :aria-describedby="ariaDescribedby"
+        name="radio-sub-component"
+        stacked
+        >
+          <b-form-radio value="1" variant="primary">Minder dan één keer per maand.</b-form-radio>
+          <b-form-radio value="2">Één keer per week</b-form-radio>
+          <b-form-radio value="3">Twee keer per week</b-form-radio>
+          <b-form-radio value="4">Dagelijks</b-form-radio>
+        </b-form-radio-group>
       </b-form-group>
+
+
+      <b-form-group
+        id="input-group-1"
+        label="Waarom bent u hier?"
+        label-for="input-1"
+      >
+        <b-form-select
+          id="input-1"
+          v-model="form.reasonOfVisit"
+          placeholder=""
+          :options="options"
+          required
+        ></b-form-select>
+      </b-form-group>
+
+    
+
+    <b-form-group
+      id="input-group"
+      label="Hoe prettig vindt u deze plek? Geef deze plek een aantal sterren! "
+      label-for="input-2"      
+      >
+      <b-form-rating
+        id="input-2"
+        v-model="form.stars"
+        variant="dark"
+        required
+        >
+      </b-form-rating>
+
+
+    <b-form-group
+    id="input-group-1"
+    label="Voelt u zich wel eens onveilig op deze plek?"
+    labelfor="input-1"
+    required
+    >
+    <b-form-radio-group
+        id="radio-group-1"
+        v-model="form.frequency"
+        :aria-describedby="ariaDescribedby"
+        name="radio-sub-component"
+        stacked
+        >
+          <b-form-radio value="1" variant="primary">Ik voel me hier nooit onveilig</b-form-radio>
+          <b-form-radio value="2">Ik heb me hier ooit een keer onveilig gevoeld</b-form-radio>
+          <b-form-radio value="3">Ik voel me hier meestal veilig</b-form-radio>
+          <b-form-radio value="4">Ik voel me hier altijd veilig </b-form-radio>
+        </b-form-radio-group>
+    </b-form-group>
+
+
+    </b-form-group>
+      <b-form-group
+        id="input-group-1"
+        label="Wat kan de gemeente doen om deze plaats te verbeteren?"
+        label-for="input-1"
+        description="Voorbeeld: Haal vaker het afval op. De container is vaak vol."
+      >
+        <b-form-textarea
+          id="input-1"
+          v-model="form.feedback"
+          placeholder=""
+          required
+        ></b-form-textarea>
+      </b-form-group>
+
+      
 
       <b-button type="submit" variant="primary">Submit</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
@@ -36,10 +111,17 @@ import axios from 'axios'
     data() {
       return {
         form: {
-          feedback: '',
           age: 10,
+          frequency: null,
+          reasonOfVisit: '',
+          stars: '',
+          feedback: '',
           qr_name: '12',
         },
+        options: [
+          {value: "wandelen", text:"Ik kom hier een frisse neus halen"},
+          {value: "onderweg", text:"Ik ben onderweg"},
+        ],
         show: true
       }
     },
@@ -74,3 +156,7 @@ import axios from 'axios'
     }
   }
 </script>
+
+<style scoped>
+
+</style>

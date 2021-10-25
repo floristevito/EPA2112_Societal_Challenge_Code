@@ -1,16 +1,17 @@
 <template>
 <div id="your_opinion">
-  <Infostatic title="Your opinion!" content="Heeft u vragen over ons concept, of iets anders? 
-    U kunt ons altijd bereiken via email. 
-    Bereik ons via: b.hermans@student.tudelft.nl"></Infostatic>
+  <Infostatic title="Laat ons weten wat je van deze plek vindt!" content="
+    Welkom! We willen u graag een aantal vragen stellen over de plek waarop u uw qr-code heeft gescanned. 
+    Met uw bijdrage helpt u de gemeente Den Haag om deze plek te verbeteren."></Infostatic>
 
 
     <div class="row no-gutters">
-        <div id="empty1" class="col-1 col-xxl-1"></div>
-        <div id="content" class="col-10 col-xxl-10">
+        <div id="empty1" class="col-2 col-xxl-1"></div>
+        <div id="content" class="col-8 col-xxl-10">
             <Datacollector></Datacollector>
+            <div class="row mt-5"></div>
         </div>
-        <div id="empty2" class="col-1 col-xxl-1"></div>
+        <div id="empty2" class="col-2 col-xxl-1"></div>
     </div>
 </div>
 </template>

@@ -3,7 +3,7 @@
     <div id="nav1" class="row no-gutters fixed-top">
         <div id="menu1" class="col-md-1 col-lg-2"></div>
         <div id="menu2" class="col-md-10 col-lg-8">
-            <b-navbar toggleable="md" class="ml-auto" type="light" variant="primary">
+            <b-navbar toggleable="md" class="ml-auto" type="light" variant="secondary">
                 <b-navbar-nav class="mr-auto">
                     <b-navbar-brand to="/" left>
                         <img src="../assets/logo.png" width="90em" ><img>
@@ -16,8 +16,8 @@
                 <b-navbar-nav  class="ml-auto">
                     <b-collapse id="navbar-toggle-collapse" is-nav>
                         <b-nav-item to="/">Home</b-nav-item>
-                        <b-nav-item to="/concept">Our concept</b-nav-item>
-                        <b-nav-item to="/form">Your opinion</b-nav-item>
+                        <b-nav-item to="/concept">Ons concept</b-nav-item>
+                        <b-nav-item to="/form">Jouw mening</b-nav-item>
                         <b-nav-item to="/contact">Contact</b-nav-item>
                     </b-collapse>
                 </b-navbar-nav>
