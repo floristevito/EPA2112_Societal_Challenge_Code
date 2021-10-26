@@ -122,7 +122,6 @@ import axios from 'axios'
           stars: '',
           feedback: '',
           safety: null,
-          qr_name: '12',
           qr_id: new URL(location.href).searchParams.get('qr_id'),
         },
         options: [

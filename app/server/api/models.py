@@ -7,6 +7,7 @@ class Feedback(models.Model):
     reasonOfVisit = models.CharField(max_length = 100)
     stars = models.CharField(max_length = 100)
     feedback = models.CharField(max_length = 1000)
+    safety = models.IntegerField()
     qr_id= models.CharField(max_length = 100)
     
     def __str__(self):
