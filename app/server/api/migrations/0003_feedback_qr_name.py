@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='feedback',
-            name='qr_name',
+            name='qr_id',
             field=models.CharField(default=1, max_length=100),
             preserve_default=False,
         ),

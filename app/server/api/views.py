@@ -5,5 +5,5 @@ from .models import Feedback
 
 
 class FeedbackViewSet(viewsets.ModelViewSet):
-    queryset = Feedback.objects.all().order_by('qr_name')
+    queryset = Feedback.objects.all().order_by('qr_id')
     serializer_class = HeroSerializer
