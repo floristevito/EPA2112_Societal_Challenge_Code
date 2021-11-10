@@ -136,7 +136,7 @@ import axios from 'axios'
         event.preventDefault()
         // alert(JSON.stringify(this.form))
         axios({method: 'post',
-               url: 'http://localhost:80/api/feedback/',
+               url: 'https://challenges.social/api/feedback/',
                headers: {
                  'Content-Type': 'application/json',
                  },
