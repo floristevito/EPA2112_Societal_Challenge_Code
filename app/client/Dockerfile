@@ -7,7 +7,8 @@ COPY package.json /srv/app/qr
 COPY package-lock.json /srv/app/qr
 
 RUN npm install 
+COPY . /srv/app/qr
+RUN npm run build
 
-COPY . /srv/app/reporting
 
-CMD ["npm", "run", "serve"]
+CMD ["npm", "run", "production"]
