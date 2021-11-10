@@ -5,12 +5,12 @@
         <div id="menu2" class="col-md-10 col-lg-8">
             <b-navbar toggleable="md" class="ml-auto" type="light" variant="secondary">
                 <b-navbar-nav class="mr-auto">
-                    <b-navbar-brand to="/" left>
+                    <!-- <b-navbar-brand to="/" left>
                         <img src="../assets/logo.png" width="90em" ><img>
                     </b-navbar-brand>
                     <b-navbar-brand to="/" left>
                         <img src="../assets/tudelft.jpeg" width="50em" ><img>
-                    </b-navbar-brand>
+                    </b-navbar-brand> -->
                 </b-navbar-nav>
                 
                 <b-navbar-nav  class="ml-auto">
