@@ -13,8 +13,6 @@ services:
         volumes:
             - ./server/src:/srv/app/qr/src
         command: python manage.py runserver 0.0.0.0:8000
-        networks:
-            - nginx_network
     
     client:
         build: './client'
@@ -32,8 +30,6 @@ services:
         environment:
             - CHOKIDAR_USEPOLLING=true
         command: npm run production
-        networks:
-            - nginx_network
 
     nginx:
         image: nginx:1.13
@@ -48,10 +44,10 @@ services:
         # command:
         #     - "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
-    certbot:
-        image: certbot/certbot
-        entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+#     certbot:
+#         image: certbot/certbot
+#         entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
 
-networks:  
-  nginx_network:
-    driver: bridge
+# networks:  
+#   nginx_network:
+#     driver: bridge
