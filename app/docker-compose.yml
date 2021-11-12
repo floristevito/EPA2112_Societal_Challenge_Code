@@ -31,16 +31,16 @@ services:
             - CHOKIDAR_USEPOLLING=true
         command: npm run production
 
-    nginx:
-        image: nginx:1.13
-        build: './nginx'
-        ports:
-            - 80:80
-        networks:
-            - nginx_network
-        volumes:
-            - ./data/certbot/conf:/etc/letsencrypt/
-            - ./data/certbot/www:/var/www/certbot/
+    # nginx:
+    #     image: nginx:1.13
+    #     build: './nginx'
+    #     ports:
+    #         - 80:80
+    #     networks:
+    #         - nginx_network
+    #     volumes:
+    #         - ./data/certbot/conf:/etc/letsencrypt/
+    #         - ./data/certbot/www:/var/www/certbot/
         # command:
         #     - "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
