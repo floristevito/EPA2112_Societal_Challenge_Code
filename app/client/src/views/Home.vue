@@ -1,8 +1,9 @@
 <template>
   <div id="home">
     <Info></Info>
-    <Infostatic title="Welkom op de home pagina van het Challanges.Social project"
-    content="Middels de inzet van QR codes hopen wij jongeren te bereiken in Den Haag."
+    <Infostatic title="Wat wij doen"
+    content="Met behulp van QR-codes proberen wij jongeren te betrekken bij het verbeteren van hun leefomgeving."
+    color="secondary"
     ></Infostatic>
   </div>
 </template>

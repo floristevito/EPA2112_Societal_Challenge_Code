@@ -25,6 +25,7 @@ export default {
 
 <style scoped>
 #info {
+  height: 35vh;
   background-color: white;
   border-radius: 0px;
   background-repeat: no-repeat;
