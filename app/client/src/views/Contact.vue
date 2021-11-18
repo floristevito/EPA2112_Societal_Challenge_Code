@@ -1,6 +1,6 @@
 <template>
   <div id="contact_info">
-    <Infostatic title="Contact" content="Do you have any questions regarding our project, reach out to us!
+    <Infostatic title="Contact" content="Voor vragen over ons project kunt u ons via de mail bereiken:
      b.hermans@student.tudelft.nl"></Infostatic>
   </div>
 </template>
