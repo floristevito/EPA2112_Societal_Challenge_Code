@@ -92,7 +92,7 @@
         id="input-group-6"
         label="Wat kan de gemeente doen om deze plaats te verbeteren?"
         label-for="input-6"
-        description="Voorbeeld: Er is te weinig groen hier."
+        description="Waarschuwing: vul hier alstublieft geen persoonsgegevens van uzelf of andere in"
       >
         <b-form-textarea
           id="input-6"
