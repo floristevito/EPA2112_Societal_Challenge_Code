@@ -4,21 +4,18 @@
     <!-- <div class="row no-gutters mb-5"></div> -->
     <div class="row no-gutters mb-3"></div>
     <Router></Router>
-    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Router from './components/Router.vue'
 import Menu from './components/Menu.vue'
-import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Router,
-    Menu, 
-    Footer
+    Menu
   },
 }
 </script>
