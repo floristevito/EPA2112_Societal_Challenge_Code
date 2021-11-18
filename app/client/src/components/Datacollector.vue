@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+    <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
       <b-form-group 
         id="input-group-1" 
         label="Wat is uw leeftijd?" 
@@ -151,7 +151,7 @@ if (new URL(location.href).searchParams.get('qr_id')) {
                data: this.form 
               })
               .then(
-                  () => {this.form.reset();}
+                  () => {document.getElementById('form').reset()}
               );
       },
       onReset(event) {
