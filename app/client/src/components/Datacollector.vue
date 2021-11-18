@@ -107,6 +107,9 @@
       <b-button type="submit" variant="primary">Submit</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
+    <b-alert show v-model="showAlert" 
+      variant="danger" 
+      class="mt-3"> {{ errorMessage }}</b-alert>
   </div>
 </template>
 
@@ -136,7 +139,8 @@ if (new URL(location.href).searchParams.get('qr_id')) {
           {value: "wonen", text:"Ik woon hier in de buurt"},
           {value: "anders", text:"Overig"},
         ],
-        show: true
+        show: true,
+        showAlert: false,
       }
     },
     methods: {
@@ -152,9 +156,16 @@ if (new URL(location.href).searchParams.get('qr_id')) {
               })
               .then(
                   (response) => {
+                    this.showAlert = true;
+                    this.errorMessage = 'succesvol geregistreerd';
                     document.getElementById('form').reset();
                     console.log(response)
-                  }
+                  },
+                  (error) => {
+                console.log(error);
+                this.showAlert = true;
+                this.errorMessage = error.response.data;
+              }
               );
       },
       onReset() {
