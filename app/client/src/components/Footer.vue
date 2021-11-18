@@ -9,10 +9,12 @@
                                     <div class="col-1 col-md-0"></div>
                                     <div class= "col-10 col-md-12 text-center" id="subfooter1">
                                         <div class="row no-gutters">
-                                            <div class="onsLogo col-12">
+                                            <div class="col-2"></div>
+                                            <div class="onsLogo col-8">
                                                 <img class="qr" src="../assets/qr.png" width="40em" ><img>
                                                 <h1 class="logoText">Challenges.Social</h1>
                                             </div>
+                                            <div class="col-2"></div>
                                         </div>
                                         <div class="row mt-5"></div>
                                        

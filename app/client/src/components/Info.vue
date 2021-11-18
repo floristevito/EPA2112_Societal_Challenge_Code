@@ -1,6 +1,7 @@
 <template>
 <div id="base">
 <div id="info" class="jumbotron text-center">
+  <div class="row mt-5 no-gutters"></div>
   <h1 class="display-4">Challanges.Social</h1>
   <div class="row no-gutters">
   <div class="col-1 col-sm-2"></div>
@@ -36,7 +37,6 @@ export default {
 
 h1 {
   color: rgb(0, 0, 0);
-  font-size: 5em;
 }
 
 p {
