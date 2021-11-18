@@ -127,6 +127,8 @@ import axios from 'axios'
         options: [
           {value: "wandelen", text:"Ik kom hier een frisse neus halen"},
           {value: "onderweg", text:"Ik ben onderweg"},
+          {value: "wonen", text:"Ik woon hier in de buurt"},
+          {value: "anders", text:"Overig"},
         ],
         show: true
       }
