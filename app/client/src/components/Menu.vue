@@ -5,9 +5,13 @@
         <div id="menu2" class="col-md-10 col-lg-8">
             <b-navbar toggleable="md" class="ml-auto" type="light" variant="secondary">
                 <b-navbar-nav class="mr-auto">
-                    <!-- <b-navbar-brand to="/" left>
-                        <img src="../assets/logo.png" width="90em" ><img>
+                    <b-navbar-brand to="/" left>
+                        <img src="../assets/qr.png" width="40em" ><img>
                     </b-navbar-brand>
+                    <b-navbar-brand to="/" left>
+                        <h1 class="logoText">Challenges.Social</h1>
+                    </b-navbar-brand>
+                     <!--
                     <b-navbar-brand to="/" left>
                         <img src="../assets/tudelft.jpeg" width="50em" ><img>
                     </b-navbar-brand> -->
@@ -43,12 +47,16 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 #nav1 {
     border-bottom: 0.1vh inset rgb(212, 212, 212); 
 }
 
 #menu1, #menu3 {
     background-color: white;
+}
+
+.logoText {
+    font-size: 1.5em;
 }
 </style>
