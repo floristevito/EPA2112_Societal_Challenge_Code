@@ -1,11 +1,11 @@
 <template>
 <div id="base">
 <div id="info" class="jumbotron text-center">
-  <h1 class="display-4">QR-interests</h1>
+  <h1 class="display-4">Challanges.Social</h1>
   <div class="row no-gutters">
   <div class="col-1 col-sm-2"></div>
   <div class="col-10 col-sm-8">
-      <p class="lead">We measure what is needed in The Hague</p>
+      <p class="lead"></p>
   </div>
   <div class="col-1 col-sm-2"></div>
   </div>
@@ -27,15 +27,18 @@ export default {
 #info {
   background-color: white;
   border-radius: 0px;
-  background-repeat: auto;
-  background-image: url("../assets/hands.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("../assets/dunes.jpg");
 }
 
 h1 {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-size: 5em;
 }
 
 p {
-  color: white;
+  color: black;
 }
 </style>
