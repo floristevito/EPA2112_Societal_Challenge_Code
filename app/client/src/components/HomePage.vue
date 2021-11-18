@@ -3,10 +3,6 @@
 <div id="info" class="text-center">
   <h1 class="display-5">Welkom op de home pagina van het Challanges.Social project</h1>
       <p class="lead">Middels de inzet van QR codes hopen wij jongeren te bereiken in Den Haag.</p>
-  <img loading="lazy"
-   src="../assets/home.jpg" 
-   alt="" title="qr_home" 
-   width="100%" height="50%">
   </div>
 </div>
 </template>
