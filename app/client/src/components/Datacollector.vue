@@ -92,7 +92,7 @@
         id="input-group-6"
         label="Wat kan de gemeente doen om deze plaats te verbeteren?"
         label-for="input-6"
-        description="Voorbeeld: Haal vaker het afval op. De container is vaak vol."
+        description="Voorbeeld: Er is te weinig groen hier."
       >
         <b-form-textarea
           id="input-6"
@@ -116,7 +116,7 @@ import axios from 'axios'
     data() {
       return {
         form: {
-          age: 10,
+          age: null,
           frequency: null,
           reasonOfVisit: '',
           stars: '',
