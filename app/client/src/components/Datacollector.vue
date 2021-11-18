@@ -112,6 +112,11 @@
 
 <script>
 import axios from 'axios'
+if (new URL(location.href).searchParams.get('qr_id')) {
+  var id = new URL(location.href).searchParams.get('qr_id')}
+  else {
+    var id = "0_unknown"
+  }
   export default {
     data() {
       return {
@@ -122,7 +127,7 @@ import axios from 'axios'
           stars: '',
           feedback: '',
           safety: null,
-          qr_id: new URL(location.href).searchParams.get('qr_id'),
+          qr_id: id,
         },
         options: [
           {value: "wandelen", text:"Ik kom hier een frisse neus halen"},
@@ -145,7 +150,7 @@ import axios from 'axios'
                data: this.form 
               })
               .then(
-                  (response) => {console.log(response)}
+                  (response) => {this.form.reset();}
               );
       },
       onReset(event) {
