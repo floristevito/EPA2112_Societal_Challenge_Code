@@ -31,5 +31,7 @@ props: {
 </script>
 
 <style>
-
+.base {
+  background-color: red;
+}
 </style>
