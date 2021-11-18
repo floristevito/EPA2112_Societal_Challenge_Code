@@ -17,6 +17,7 @@
                                             <div class="col-2"></div>
                                         </div>
                                         <div class="row mt-5"></div>
+                                        <p id="slogan">Waar technologie en mens elkaar ontmoeten</p>
                                        
                                         
                                     </div>
@@ -73,6 +74,12 @@ export default {
 h1 {
     color: black;
     font-size: 1.5em;
+}
+
+#slogan {
+    color: black;
+    margin-right: 2em;
+    font-size: 0.7em;
 }
 
 a {
