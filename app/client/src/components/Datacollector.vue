@@ -151,21 +151,25 @@ if (new URL(location.href).searchParams.get('qr_id')) {
                data: this.form 
               })
               .then(
-                  () => {document.getElementById('form').reset()}
+                  (response) => {
+                    document.getElementById('form').reset();
+                    console.log(response)
+                  }
               );
       },
-      onReset(event) {
-        event.preventDefault()
-        // Reset our form values
-        this.form.email = ''
-        this.form.name = ''
-        this.form.food = null
-        this.form.checked = []
-        // Trick to reset/clear native browser form validation state
-        this.show = false
-        this.$nextTick(() => {
-          this.show = true
-        })
+      onReset() {
+        // event.preventDefault()
+        // // Reset our form values
+        // this.form.email = ''
+        // this.form.name = ''
+        // this.form.food = null
+        // this.form.checked = []
+        // // Trick to reset/clear native browser form validation state
+        // this.show = false
+        // this.$nextTick(() => {
+        //   this.show = true
+        // })
+        document.getElementById('form').reset()
       }
     }
   }
