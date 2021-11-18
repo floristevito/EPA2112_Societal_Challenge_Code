@@ -45,7 +45,7 @@
                                     <div class= "col-10 col-md-12 text-center" id = "subfooter3">
                                     <h1>Vragen?</h1>
                                     <li class = "footer_li"><a href="/#/contact/">Contact</a></li>
-                                    <li class = "footer_li"><a href="/#/concept/">Wat we doen?</a></li>
+                                    <li class = "footer_li"><a href="/#/concept/">Wat we doen</a></li>
                                     </div>
                                     <div class="col-1 col-md-0"></div>
                                 </div>

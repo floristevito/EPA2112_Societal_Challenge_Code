@@ -6,9 +6,7 @@
             <b-navbar toggleable="md" class="ml-auto" type="light" variant="secondary">
                 <b-navbar-nav class="mr-auto">
                     <b-navbar-brand to="/" left>
-                        <img src="../assets/qr.png" width="40em" ><img>
-                    </b-navbar-brand>
-                    <b-navbar-brand to="/" left>
+                        <img class="logo" src="../assets/qr.png" width="40em" ><img>
                         <h1 class="logoText">Challenges.Social</h1>
                     </b-navbar-brand>
                      <!--
@@ -56,7 +54,13 @@ export default {
     background-color: white;
 }
 
+.logo {
+    float: left;
+}
+
 .logoText {
     font-size: 1.5em;
+    float: left;
+    margin-left: 0.2em;
 }
 </style>
