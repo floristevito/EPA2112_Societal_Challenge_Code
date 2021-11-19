@@ -92,7 +92,7 @@
         id="input-group-6"
         label="Wat kan de gemeente doen om deze plaats te verbeteren?"
         label-for="input-6"
-        description="Waarschuwing: vul hier alstublieft geen persoonsgegevens van uzelf of andere in"
+        description="Waarschuwing: vul hier alstublieft geen persoonsgegevens van uzelf of anderen in"
       >
         <b-form-textarea
           id="input-6"
