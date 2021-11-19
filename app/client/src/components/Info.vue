@@ -2,7 +2,7 @@
 <div id="base">
 <div id="info" class="jumbotron text-center">
   <div class="row mt-5 no-gutters"></div>
-  <h1 class="display-3">Challenges.Social</h1>
+  <h1 class="display-6">Challenges.Social</h1>
   <div class="row no-gutters">
   <div class="col-1 col-sm-2"></div>
   <div class="col-10 col-sm-8">
@@ -32,11 +32,11 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  background-image: url("../assets/dunes.jpg");
+  background-image: url("../assets/people-g58b20cbbc_1920.jpg");
 }
 
 h1 {
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 p {
