@@ -1,8 +1,8 @@
 <template>
 <div id="your_opinion">
   <Infostatic title="Laat ons weten wat je van deze plek vindt!" content="
-    Welkom! We willen u graag een aantal vragen stellen over de plek waarop u uw qr-code heeft gescanned. 
-    Met uw bijdrage helpt u de gemeente Den Haag om deze plek te verbeteren."
+    Welkom! We willen je graag een aantal vragen stellen over de plek waar je jouw QR code hebt gescanned. 
+    Met jouw bijdrage helpt u de gemeente Den Haag om deze plek te verbeteren."
     color="primary"></Infostatic>
 
 
