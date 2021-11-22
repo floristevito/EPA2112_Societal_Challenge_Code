@@ -10,11 +10,11 @@
                                     <div class= "col-10 col-md-12 text-center" id="subfooter1">
                                         <div class="row no-gutters">
                                             <div class="col-2"></div>
-                                            <div class="onsLogo col-8">
+                                            <div class="onsLogo col-10">
                                                 <img class="qr" src="../assets/qr.png" width="40em" ><img>
                                                 <h1 class="logoText">Challenges.Social</h1>
                                             </div>
-                                            <div class="col-2"></div>
+                                            <div class="col-0"></div>
                                         </div>
                                         <div class="row mt-5"></div>
                                         <p id="slogan">Waar technologie en mens elkaar ontmoeten</p>
@@ -31,7 +31,7 @@
                                     <div class= "col-10 col-md-12 text-center" id = "subfooter2">
                                     <h1>Partners</h1>
                                      <div class="row no-gutters">
-                                            <div class="collab col-12">
+                                            <div class="col-12">
                                                 <a href="https://www.denhaag.nl"><img class="denhaag" src="../assets/logo.svg" width="200em" ><img></a>
                                             </div>
                                         </div>
