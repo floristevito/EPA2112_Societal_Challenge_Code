@@ -1,14 +1,28 @@
 <template>
   <div id="concept">     
       <Infostatic title="Ons concept" content="         
-            Inwoners kunnen een bijdrage leveren aan de leefbaarheid van hun stad. De gemeente Den Haag probeert jongeren en andere inwoners 
-            hiertoe aan te zetten, door ze te benaderen met behulp van wijktafels. 
-            De wijktafel is een goed instrument om burgers te bereiken, maar schiet tekort in het bereiken van jongeren. 
-            Door een vragenlijst in de publieke ruimte aan te bieden met behulp van QR-codes, hopen wij de jongeren die niet naar de wijktafels komen te bereiken.
-            ">
+            Met behulp van QR-posters verzamelen wij data voor de Wijkagenda’s in Den Haag.
+            De Wijkagenda is bedoeld voor inwoners om hun eigen wijk te kunnen verbeteren. 
+            Het is een goed instrument om input te krijgen, maar schiet tekort in het bereiken van jongeren.
+            Door een vragenlijst in de publieke ruimte aan te bieden met behulp van QR-codes, 
+            hopen wij meer jongeren te bereiken.
+            "
+            color="primary">
       </Infostatic>
-      <b-img src="../assets/steps.png" fluid alt="Responsive image"></b-img>
 
+      <div class="row no-gutters text-center">
+      <div class="col-1 col-sm-2"></div>
+      <div class="col-10 col-sm-8">
+        <h1 class="display-4">Hoe het werkt</h1>
+        <img :src="require('../assets/steps.png')" height="250em" fluid alt="Responsive image">
+      </div>
+      <div class="col-1 col-sm-2"></div>      
+    </div>
+
+    <Infostatic title="Verbindend" content="         
+            Ons intiatief is een poging om beleidsmakers en burgers elkaar beter te leren begrijpen. 
+            "  color="primary">
+      </Infostatic>
       
   </div>
 </template>
@@ -24,5 +38,4 @@ export default {
 </script>
 
 <style>
-
 </style>
