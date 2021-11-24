@@ -7,6 +7,7 @@
             Door een vragenlijst in de publieke ruimte aan te bieden met behulp van QR-codes, hopen wij de jongeren die niet naar de wijktafels komen te bereiken.
             ">
       </Infostatic>
+      <b-img src="../assets/steps.png" fluid alt="Responsive image"></b-img>
 
       
   </div>
