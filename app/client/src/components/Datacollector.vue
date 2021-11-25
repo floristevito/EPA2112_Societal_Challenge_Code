@@ -104,7 +104,7 @@
 
       
 
-      <b-button type="submit" variant="primary">Submit</b-button>
+      <b-button type="submit" variant="primary">Verzenden</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
     <b-alert show v-model="showAlert" 
